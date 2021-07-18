@@ -1,362 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#7f5af0">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#fffffe">
+
+  <!-- Title -->
   <title>Joe Pernecky</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/hover/hover.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- Responsive css -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
-
-  <!-- =======================================================
-    Theme Name: Folio
-    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  <!-- Link JS -->
+  <script src="portfolio.js"></script>
+  <script>
+    window.onload = welcome;
+  </script>
 </head>
+<body id="body">
+  <div class="welcome-page">
+    <div class="mobile-tap-message mobile-tap-move" hidden><h3>Tap Here!</h3></div>
+    <div id="text" class="welcome-section font-weight-500">
+      <div class="animate__animated animate__fadeInUp animate__faster">
+          <h1 class="welcome-text white-text hey-text">Hey,</h1>
+          <h1 class="welcome-text blue-text name-text" id="name">I'm Joe</h1>
+      </div>
+    </div>
+  </div>
 
-<body>
+  <div id="info-links" class="info-section animate__animated font-weight-500" hidden>
+    <div id="about-button" class="link-text-wrapper">
+      <h2 id="aboutme-text" class="blue-text animate__animated animate__rotateInUpLeft animate__faster">About Me</h2>
+    </div>
+    <div id="projects-button" class="link-text-wrapper">
+      <h2 id="projects-text" class="white-text animate__animated animate__rotateInUpLeft animate__faster">Projects</h2>
+    </div>
+    <div id="contact-button" class="link-text-wrapper">
+      <h2 id="contact-text" class="white-text animate__animated animate__rotateInUpLeft animate__faster">Contact</h2>
+    </div>
+  </div>
 
-  <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
-
-        <div class="logo">
-          <a href="index.html">Joe Pernecky</a>
+  <div id="about-me-section" class="about-page" hidden>
+    <ul id="about-me-title-bar">
+      <li><h2 id="about-me-title" class="medium-font font-weight-200 white-text"><span class="font-weight-600 white-text">About</span> Me</h2></li>
+      <li><div id="about-back-button" class="back"><h3 class="back-text font-weight-600">Back to Home</h3></div></li>
+    </ul>
+    <div id="resume-download-div"><a id="resume-download" class="small-font orange-text blue-text-hover">View Resume</a></div>
+    <img src="Images/throwing_cap.png" alt="Another picture of me looking to right" id="about-photo" class="animate__animated animate__fadeIn animate__slow">
+    <div class="about-text">
+      <div id="scrollable-content">
+        <span class="small-font font-weight-600 orange-underline">Hey, I’m Joe!</span>
+        <div class="indented-text">
+          <p>I’m a recent graduate from Michigan State University with a Bachelor of Arts degree. At MSU, I majored in Media and Information with a focus on web design and development and minored in computer science. I began college in engineering, but quickly developed a passion for designing and building websites and web applications.</p>
+  
+          <p>Throughout my time at MSU, I took all the available web design and development courses, plenty of computer science courses, as well as courses on digital business, user experience and data visualization (<span id="courses-link" class="orange-text cursor-pointer blue-text-hover">Click to View</span>). Beyond my learning at MSU, I've taught myself a great deal and taken two full-stack web development courses on Udemy.</p>
+    
+          <p>I gained a lot of experience from my time at MSU working in and leading teams to build applications using Scrum as a development cycle framework. This improved my organization, communication, and code readability skills. These abilities have lent themselves to my solo projects as well, improving my overall efficiency and workflow.</p>
+    
+          <p>Since my graduation in May, I've been continuing to learn by teaching myself new skills and improving my existing ones. At the same time, I've been designing and building my portfolio/personal website and working with the EMU Science department in planning and designing a website for its students to use as a place for shared learning and discussion.</p>
         </div>
+      </div>
+      <div id="course-info" hidden>
+        <p>Web Design and Development (HTML, CSS, Git), Advanced Web Development and Databases (HTML, CSS, SCSS, JS), Web Application Architecture & Development (HTML, CSS, SCSS, PHP, SQL, AJAX, JS), Introduction to Programming I (Python), Introduction to Programming II (C++), Discrete Structures Comp Sci (Discrete Mathematics), Software Design (OOP centered design in C++), Digital Business, Innovative Interfaces, Media Sketching & Graphics, Design and Layout, Evaluating HCT (Emphasis on usability) and Reasoning with Data (RStudio data visualization). <br><span id="about-return-link" class="orange-text cursor-pointer small-font blue-text-hover">Return &#x21b2</span></p>
+      </div>
+    </div>
+  </div>
 
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+  <div id="projects-page" hidden>
+    <div id="under-construction-text"><h1 class="white-text font-weight-500">Under</h1><h1 class="blue-text font-weight-500"> Construction</h1></div>
+    <div id="projects-github-link"><img class="icon" src="Images/github-icon-outline.png"><span class="sm-med-font white-text font-weight-500 blue-text-hover orange-underline">View GitHub Instead</span></div>
+    <div id="projects-back-button" class="back"><h3 class="back-text font-weight-600">Back to Home</h3></div>
+  </div>
 
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+  <div id="contact-section" class="white-text" hidden>
+    <img src="Images/Contact-Page-Photo.png" alt="Another picture of me looking to right" id="contact-photo" class="animate__animated animate__fadeIn animate__slow">
+    <div id="contact-page-content">
+      <h2 id="contact-name" class="medium-font font-weight-200"><span class="font-weight-600 white-text">Joe</span> Pernecky</h2>
+      <h3 id="contact-description" class="small-font blue-text">Full-Stack Web Developer</h3>
+      <h3 id="find-me-on" class="grey-text extra-small-font">Find me on</h3>
+      <div id="contact-links-section">
+        <ul id="contact-links-list">
+          <li id="email-link"><img class="icon" src="Images/email-icon.png"><span class="btn sm-med-font white-text font-weight-500 blue-text-hover" data-clipboard-text="pernecky.joe@gmail.com">pernecky.joe@gmail.com</span><span class="tooltiptext">Click to copy email address</span></li>
+          <li id="github-link"><img class="icon" src="Images/github-icon-outline.png"><span class="sm-med-font white-text font-weight-500 blue-text-hover">/beanpern</span></li>
+          <li id="linkedin-link"><img class="icon" src="Images/linkedin-icon.png"><span class="sm-med-font white-text font-weight-500 blue-text-hover">/joe-pernecky</span></li>
         </ul>
-
       </div>
-    </div>
-  </nav>
-  <!-- End section navbar -->
-
-
-  <!-- start section header -->
-  <div id="header" class="home">
-
-    <div class="container">
-      <div class="header-content">
-        <h1>I'm <span class="typed"></span></h1>
-        <p>designer, developer, Freelancer</p>
-
-        <ul class="list-unstyled list-social">
-          <li><a href="https://www.facebook.com/joe.pernecky" target="_blank"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://twitter.com/perneckyjoe" target="_blank"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/joe_pernecky/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="https://dribbble.com/beanpern" target="_blank"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-      </div>
+      <!-- <div id="email" class="contact-links"><img class="icon" src="Images/email-icon.png"></div>
+      <div id="github" class="contact-links"><img class="icon" src="Images/github-icon.png"></div>
+      <div id="linkedin" class="contact-links"><img class="icon" src="Images/linkedin-icon.png"></div> -->
+      <div id="contact-back-button" class="back"><h3 class="back-text font-weight-600">Back to Home</h3></div>
     </div>
   </div>
-  <!-- End section header -->
 
+  <div class="bg-photo animate__animated animate__fadeIn animate__slow"></div>
+  <div class="lg-square right-square"></div>
+  <div class="lg-square left-square"></div>
 
-  <!-- start section about us -->
-  <div id="about" class="paddsection">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
-            <div class="about-img">
-              <img src="images/me2.jpg" class="img-responsive" alt="image of me">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading">I'm a full stack web designer/developer based in East Lansing, MI. I love creating websites from the ground up and helping to improve existing ones.&nbsp; &nbsp; </p>
-            <p class="separator">I'm currently a Senior at Michigan State University and will be graduating in May of this year with a Major in Media and Information (with a specialty in web design/development) and a Minor in Computer Science. I'm looking to build up my portfolio and enter the web design/development industry as soon as possible, as it is my passion.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
+  <div class="circle-grid right-circle-grid right-circle-grid-top">
+    <div class="sm-circle black-circle animated"></div>
+    <div class="sm-circle black-circle animated delay200ms"></div>
+    <div class="sm-circle black-circle animated delay400ms"></div>
+    <div class="sm-circle black-circle animated delay600ms"></div>
   </div>
-  <!-- end section about us -->
-
-
-  <!-- start section services -->
-  <div id="services">
-    <div class="container">
-
-        <div class="services-carousel owl-theme">
-
-          <div class="services-block">
-
-            <i class="ion-ios-browsers-outline"></i>
-            <span>WEB DESIGN</span>
-            <p class="separator">I absolutely love designing web pages that match the needs of each client</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-lightbulb-outline"></i>
-            <span>TAILORED TO YOU</span>
-            <p class="separator">I'd love to help you build your dream website tailored specifically to your needs</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>WEB DEVELOPMENT</span>
-            <p class="separator">My background in web development and computer science any website or web application that you desire</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-analytics-outline"></i>
-            <span>RESPONSIVE DESIGN</span>
-            <p class="separator">I'll help you create a website that is responsive and is viewable on any device</p>
-
-          </div>
-
-        </div>
-
-    </div>
-
+  <div class="circle-grid right-circle-grid right-circle-grid-bot">
+    <div class="sm-circle blue-circle animated delay1600ms"></div>
+    <div class="sm-circle blue-circle animated delay1400ms"></div>
+    <div class="sm-circle blue-circle animated delay1200ms"></div>
+    <div class="sm-circle blue-circle animated delay1000ms"></div>
   </div>
-  <!-- end section services -->
 
-
-  <!-- start section portfolio -->
-  <div id="portfolio" class="text-center paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>My Portfolio</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="portfolio-list">
-
-            <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".webdesign">web design</li>
-              <li class="filter" data-filter=".webdev">web development</li>
-              <li class="filter" data-filter=".apps">applications</li>
-            </ul>
-
-          </div>
-
-          <div class="portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all webdev webdesign">
-              <a class="popup-img" href="images/portfolio/linkgen.jpg">
-                <img src="images/portfolio/linkgen.jpg" alt="previously designed and developed website">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all apps">
-              <a href="http://webdev.cse.msu.edu/~pernecky/step4/welcome.php" target="_blank">
-                <img src="images/portfolio/stalkingwumpus.jpg"  alt="web application built for computer science course">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign webdev">
-              <a class="popup-img" href="images/portfolio/sprinkle.jpg">
-                <img src="images/portfolio/sprinkle.jpg" alt="web application built for web development course">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all webdev webdesign apps">
-              <a class="popup-img" href="images/portfolio/joke.jpg">
-                <img src="images/portfolio/joke.jpg" alt="web application built for web development course">
-              </a>
-            </div>
-			  
-			<div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign">
-              <a class="popup-img" href="images/portfolio/style1.jpg">
-                <img src="images/portfolio/style1.jpg" alt="first style tile for website">
-              </a>
-            </div>
-			  
-			<div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign">
-              <a class="popup-img" href="images/portfolio/style2.jpg">
-                <img src="images/portfolio/style2.jpg" alt="second style tile for website">
-              </a>
-            </div>
-			  
-			<div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign">
-              <a class="popup-img" href="images/portfolio/style3.jpg">
-                <img src="images/portfolio/style3.jpg" alt="third style tile for website">
-              </a>
-            </div>
-			  
-			<div class="col-lg-4 col-md-6 portfolio-thumbnail all webdesign">
-              <a class="popup-img" href="images/portfolio/wireframe1.jpg">
-                <img src="images/portfolio/wireframe1.jpg" alt="wireframe for website">
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div class="circle-grid left-circle-grid left-circle-grid-top">
+    <div class="sm-circle blue-circle animated delay640ms"></div>
+    <div class="sm-circle blue-circle animated delay480ms"></div>
+    <div class="sm-circle blue-circle animated delay320ms"></div>
+    <div class="sm-circle blue-circle animated delay160ms"></div>
+    <div class="sm-circle blue-circle animated"></div>
   </div>
-  <!-- End section portfolio -->
-
-  <!-- start section contact -->
-  <div id="contact" class="paddsection">
-    <div class="container">
-      <div class="contact-block1">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">GET IN TOUCH</h2>
-
-              <ul class="contact-details">
-                <li><span>Joe Pernecky</span></li>
-                <li><span>Michigan, United States</span></li>
-                <li><span>pernecky@msu.edu</span></li>
-              </ul>
-				
-				<p class="separator"><strong>I'd love to get in touch with you and help build your dream website!</strong></p>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="https://formspree.io/f/meqpyonk" method="POST" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="circle-grid left-circle-grid left-circle-grid-bot">
+    <div class="sm-circle black-circle animated delay800ms"></div>
+    <div class="sm-circle black-circle animated delay960ms"></div>
+    <div class="sm-circle black-circle animated delay1120ms"></div>
+    <div class="sm-circle black-circle animated delay1280ms"></div>
+    <div class="sm-circle black-circle animated delay1600ms"></div>
   </div>
-  <!-- start sectoion contact -->
 
-
-  <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="https://www.facebook.com/joe.pernecky" target="_blank"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://twitter.com/perneckyjoe" target="_blank"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/joe_pernecky/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="https://dribbble.com/beanpern" target="_blank"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
-    </div>
-  </div>
-  <!-- End section footer -->
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/typed/typed.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+  <script src="dist/clipboard.min.js"></script>
 </body>
-
 </html>
